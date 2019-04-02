@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    
+    char selector = 0, number = 0;
+    printf("Type '1' to encrypt a phrase\n");
+    printf("Type '2' to decrypt a phrase (known key)\n");
+    printf("Type '3' to decrypt a phrase (unknown key)\n");
+    printf(": ");
+    scanf("%c", &selector);
+    switch (selector)
+    {
+        case '1':
+            printf("Enter a phrse to be encrypted\nCapitals only:");
+            scanf("%c", number);
+            break;
+        case '2':
+            printf("not working");
+            break;
+        case '3':
+            printf("not working");
+            break;
+        default:
+            printf("invaild input");
+            break;
+    }
+    return 0;
+}
